@@ -54,7 +54,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ```bash
 export VERA_URL="https://18.190.188.99:8443"
-export VERA_TOKEN="ef2cbfdde0d1b0cb55d0610fea24754531436a761a35db942e5414cab9f9656c"
+export VERA_TOKEN="<your-vera-token>"
 export VERA_INSECURE=1  # only for self-signed certs in dev
 cargo run
 ```
@@ -78,7 +78,7 @@ The deployed Vera hub at `18.190.188.99:8443` has a test principal:
 
 ```bash
 export VERA_URL="https://18.190.188.99:8443"
-export VERA_TOKEN="ef2cbfdde0d1b0cb55d0610fea24754531436a761a35db942e5414cab9f9656c"
+export VERA_TOKEN="<your-vera-token>"
 ```
 
 This principal (`test`) has access to: `echo`, `llm-local`, `bedrock-claude`, `llm-fallback`.
@@ -267,7 +267,7 @@ Your app doesn't implement any of these — the gateway enforces them on every c
 ```bash
 cd demos/echo
 export VERA_URL="https://18.190.188.99:8443"
-export VERA_TOKEN="ef2cbfdde0d1b0cb55d0610fea24754531436a761a35db942e5414cab9f9656c"
+export VERA_TOKEN="<your-vera-token>"
 export VERA_INSECURE=1
 cargo run -- "Hello, Vera!"
 ```
